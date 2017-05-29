@@ -17,8 +17,6 @@
 		6E92B42E1EDC204B00D37B9F /* EKKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E92B4251EDC204B00D37B9F /* EKKit.framework */; };
 		6E92B4351EDC204B00D37B9F /* EKKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4341EDC204B00D37B9F /* EKKitTests.swift */; };
 		6E92B4371EDC204B00D37B9F /* EKKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E92B4271EDC204B00D37B9F /* EKKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E92B43A1EDC204B00D37B9F /* EKKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E92B4251EDC204B00D37B9F /* EKKit.framework */; };
-		6E92B43B1EDC204B00D37B9F /* EKKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E92B4251EDC204B00D37B9F /* EKKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E92B4441EDC20D800D37B9F /* EKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
 		6E92B4451EDC20D800D37B9F /* EKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +66,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6E92B43B1EDC204B00D37B9F /* EKKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,7 +100,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E92B43A1EDC204B00D37B9F /* EKKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +795,7 @@
 				6E92B4191EDC204000D37B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E92B41A1EDC204000D37B9F /* Build configuration list for PBXNativeTarget "EKKitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -807,6 +804,7 @@
 				6E92B41C1EDC204000D37B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E92B41D1EDC204000D37B9F /* Build configuration list for PBXNativeTarget "EKKitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +813,7 @@
 				6E92B41F1EDC204000D37B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E92B43C1EDC204B00D37B9F /* Build configuration list for PBXNativeTarget "EKKit" */ = {
 			isa = XCConfigurationList;
@@ -823,6 +822,7 @@
 				6E92B43E1EDC204B00D37B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E92B4401EDC204B00D37B9F /* Build configuration list for PBXNativeTarget "EKKitTests" */ = {
 			isa = XCConfigurationList;
@@ -831,6 +831,7 @@
 				6E92B4421EDC204B00D37B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
