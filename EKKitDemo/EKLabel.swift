@@ -28,7 +28,7 @@ open class EKLabel:UILabel {
         setup()
     }
 
-    public func setup() {
+    open func setup() {
         backgroundColor = UIColor.yellow
     }
 }
