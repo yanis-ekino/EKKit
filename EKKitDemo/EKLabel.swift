@@ -12,7 +12,7 @@ import UIKit
 open class EKLabel:UILabel {
 
     #if TARGET_INTERFACE_BUILDER
-    override public func prepareForInterfaceBuilder() {
+    override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
     }
@@ -28,7 +28,7 @@ open class EKLabel:UILabel {
         setup()
     }
 
-    public func setup() {
+    open func setup() {
         backgroundColor = UIColor.yellow
     }
 }
