@@ -18,7 +18,7 @@ open class EKLabel:UILabel {
     }
     #endif
 
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
@@ -28,7 +28,7 @@ open class EKLabel:UILabel {
         setup()
     }
 
-    open func setup() {
+    public func setup() {
         backgroundColor = UIColor.yellow
     }
 }
