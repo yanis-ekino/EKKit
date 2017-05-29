@@ -20,6 +20,7 @@
 		6E92B4441EDC20D800D37B9F /* EKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
 		6E92B4451EDC20D800D37B9F /* EKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
 		6EED86681EDC5A260011614A /* Designables in Resources */ = {isa = PBXBuildFile; fileRef = 6EED86671EDC5A260011614A /* Designables */; };
+		6EED86A11EDC688D0011614A /* EKLabel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -229,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E92B4371EDC204B00D37B9F /* EKKit.h in Headers */,
+				6EED86A11EDC688D0011614A /* EKLabel.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
