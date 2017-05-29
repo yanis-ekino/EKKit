@@ -12,7 +12,7 @@ import UIKit
 open class EKLabel:UILabel {
 
     #if TARGET_INTERFACE_BUILDER
-    override func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
     }
