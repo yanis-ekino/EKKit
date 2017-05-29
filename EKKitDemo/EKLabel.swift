@@ -9,26 +9,26 @@
 import UIKit
 
 @IBDesignable
-class EKLabel:UILabel {
+public class EKLabel:UILabel {
 
     #if TARGET_INTERFACE_BUILDER
-    override func prepareForInterfaceBuilder() {
+    public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
     }
     #endif
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
 
-    func setup() {
+    public func setup() {
         backgroundColor = UIColor.yellow
     }
 }
