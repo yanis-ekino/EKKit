@@ -19,6 +19,7 @@
 		6E92B4371EDC204B00D37B9F /* EKKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E92B4271EDC204B00D37B9F /* EKKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E92B4441EDC20D800D37B9F /* EKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
 		6E92B4451EDC20D800D37B9F /* EKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
+		6EED86681EDC5A260011614A /* Designables in Resources */ = {isa = PBXBuildFile; fileRef = 6EED86671EDC5A260011614A /* Designables */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +93,8 @@
 		6E92B42D1EDC204B00D37B9F /* EKKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E92B4341EDC204B00D37B9F /* EKKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKKitTests.swift; sourceTree = "<group>"; };
 		6E92B4361EDC204B00D37B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E92B4431EDC20D800D37B9F /* EKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKLabel.swift; sourceTree = "<group>"; };
+		6E92B4431EDC20D800D37B9F /* EKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EKLabel.swift; path = EKKitDemo/EKLabel.swift; sourceTree = SOURCE_ROOT; };
+		6EED86671EDC5A260011614A /* Designables */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Designables; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +167,6 @@
 				6E92B3F21EDC204000D37B9F /* AppDelegate.swift */,
 				6E92B3F41EDC204000D37B9F /* ViewController.swift */,
 				6E92B3F61EDC204000D37B9F /* Main.storyboard */,
-				6E92B4461EDC20DD00D37B9F /* EKKit */,
 				6E92B3F91EDC204000D37B9F /* Assets.xcassets */,
 				6E92B3FB1EDC204000D37B9F /* LaunchScreen.storyboard */,
 				6E92B3FE1EDC204000D37B9F /* Info.plist */,
@@ -195,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				6E92B4271EDC204B00D37B9F /* EKKit.h */,
+				6E92B4431EDC20D800D37B9F /* EKLabel.swift */,
+				6EED86671EDC5A260011614A /* Designables */,
 				6E92B4281EDC204B00D37B9F /* Info.plist */,
 			);
 			path = EKKit;
@@ -207,14 +210,6 @@
 				6E92B4361EDC204B00D37B9F /* Info.plist */,
 			);
 			path = EKKitTests;
-			sourceTree = "<group>";
-		};
-		6E92B4461EDC20DD00D37B9F /* EKKit */ = {
-			isa = PBXGroup;
-			children = (
-				6E92B4431EDC20D800D37B9F /* EKLabel.swift */,
-			);
-			name = EKKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EED86681EDC5A260011614A /* Designables in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
