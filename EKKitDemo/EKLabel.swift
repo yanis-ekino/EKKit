@@ -12,23 +12,23 @@ import UIKit
 open class EKLabel:UILabel {
 
     #if TARGET_INTERFACE_BUILDER
-    open override func prepareForInterfaceBuilder() {
+    override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
     }
     #endif
 
-    open override init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
 
-    required open init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
 
-    open func setup() {
+    public func setup() {
         backgroundColor = UIColor.yellow
     }
 }
