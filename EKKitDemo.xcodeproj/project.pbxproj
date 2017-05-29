@@ -19,6 +19,8 @@
 		6E92B4371EDC204B00D37B9F /* EKKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E92B4271EDC204B00D37B9F /* EKKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E92B43A1EDC204B00D37B9F /* EKKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E92B4251EDC204B00D37B9F /* EKKit.framework */; };
 		6E92B43B1EDC204B00D37B9F /* EKKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E92B4251EDC204B00D37B9F /* EKKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E92B4441EDC20D800D37B9F /* EKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
+		6E92B4451EDC20D800D37B9F /* EKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E92B4431EDC20D800D37B9F /* EKLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,7 @@
 		6E92B42D1EDC204B00D37B9F /* EKKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E92B4341EDC204B00D37B9F /* EKKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKKitTests.swift; sourceTree = "<group>"; };
 		6E92B4361EDC204B00D37B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E92B4431EDC20D800D37B9F /* EKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +169,7 @@
 				6E92B3F21EDC204000D37B9F /* AppDelegate.swift */,
 				6E92B3F41EDC204000D37B9F /* ViewController.swift */,
 				6E92B3F61EDC204000D37B9F /* Main.storyboard */,
+				6E92B4461EDC20DD00D37B9F /* EKKit */,
 				6E92B3F91EDC204000D37B9F /* Assets.xcassets */,
 				6E92B3FB1EDC204000D37B9F /* LaunchScreen.storyboard */,
 				6E92B3FE1EDC204000D37B9F /* Info.plist */,
@@ -207,6 +211,14 @@
 				6E92B4361EDC204B00D37B9F /* Info.plist */,
 			);
 			path = EKKitTests;
+			sourceTree = "<group>";
+		};
+		6E92B4461EDC20DD00D37B9F /* EKKit */ = {
+			isa = PBXGroup;
+			children = (
+				6E92B4431EDC20D800D37B9F /* EKLabel.swift */,
+			);
+			name = EKKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +357,7 @@
 					6E92B4241EDC204B00D37B9F = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = A65MHS8BRK;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					6E92B42C1EDC204B00D37B9F = {
@@ -424,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E92B3F51EDC204000D37B9F /* ViewController.swift in Sources */,
+				6E92B4441EDC20D800D37B9F /* EKLabel.swift in Sources */,
 				6E92B3F31EDC204000D37B9F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E92B4451EDC20D800D37B9F /* EKLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +622,7 @@
 		6E92B4181EDC204000D37B9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A65MHS8BRK;
 				INFOPLIST_FILE = EKKitDemo/Info.plist;
@@ -620,6 +636,7 @@
 		6E92B4191EDC204000D37B9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A65MHS8BRK;
 				INFOPLIST_FILE = EKKitDemo/Info.plist;
@@ -691,6 +708,7 @@
 		6E92B43D1EDC204B00D37B9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -704,6 +722,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ekino.EKKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -713,6 +732,7 @@
 		6E92B43E1EDC204B00D37B9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
