@@ -11,12 +11,10 @@ import UIKit
 @IBDesignable
 open class EKLabel:UILabel {
 
-    #if TARGET_INTERFACE_BUILDER
     override open func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
     }
-    #endif
 
     override public init(frame: CGRect) {
         super.init(frame: frame)
